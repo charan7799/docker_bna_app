@@ -15,6 +15,8 @@ bna_model_pkl = open("saved_models/bn_classifier.pkl" , 'rb')
 classifier = pickle.load(bna_model_pkl)
 Swagger(app)
 
+# testing git changes
+
 @app.route("/predict", methods =["GET"])
 def predict():
     """ authenticating single note data
